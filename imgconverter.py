@@ -1,6 +1,10 @@
+# Import required library
+
 import tkinter as tk
 from tkinter import filedialog
 from PIL import Image
+
+# Create Objects
 
 root = tk.Tk()
 
@@ -10,6 +14,8 @@ canvas1.pack()
 label1 = tk.Canvas(root, text='File Conversion Tool', bg='azure3')
 label1.config(font=('helvetica', 20))
 canvas1.create_window(150, 60, window=label1)
+
+# Define classes
 
 def getPING():
     global im1
